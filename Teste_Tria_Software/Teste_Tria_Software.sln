@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste_Tria_Software", "Teste_Tria_Software\Teste_Tria_Software.csproj", "{81B3485B-226B-4809-910E-828805E71017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B3485B-226B-4809-910E-828805E71017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B3485B-226B-4809-910E-828805E71017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B3485B-226B-4809-910E-828805E71017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B3485B-226B-4809-910E-828805E71017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3A1BE82-3C77-4D8D-A038-5D7157F92595}
+	EndGlobalSection
+EndGlobal
