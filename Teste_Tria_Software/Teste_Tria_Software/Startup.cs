@@ -26,6 +26,9 @@ namespace Teste_Tria_Software
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(Configuration.GetConnectionString("ConexaoBD")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

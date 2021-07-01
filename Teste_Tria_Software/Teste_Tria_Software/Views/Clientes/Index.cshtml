@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Teste_Tria_Software.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Lista de Clientes";
+    var result = ViewData["Resultado"];
+}
+
+<h1>Lista de Clientes</h1>
+@using (Html.BeginForm("Index", "Clientes", FormMethod.Post))
+{
+    <input type="text" placeholder="Digite o CPF ou Nome..." name="conteudo" />
+    <button type="submit"> Pesquisar </button>
+}
+<p>
+    @result
+</p>
+<br />
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NOME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATA_CRIACAO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EMAIL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DATA_CRIACAO)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClienteID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClienteID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClienteID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

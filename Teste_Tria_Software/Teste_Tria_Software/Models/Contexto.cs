@@ -13,9 +13,9 @@ namespace Teste_Tria_Software.Models
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<ClienteEmpresa> ClienteEmpresas { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
-            optionsBuilder.UseSqlServer("Password=UsuSenha1234;Persist Security Info=True;User ID=UsuarioElock;Initial Catalog=TesteTriaBD;Data Source=DESKTOP-7JG4BBK\\SQLEXPRESS");
+
         }
     }
 }
