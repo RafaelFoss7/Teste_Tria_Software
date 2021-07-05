@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -36,7 +40,7 @@ namespace Teste_Tria_Software.Controllers
                     return View(await _context.Clientes.Where(x => x.CPF.Contains(conteudo)).ToListAsync());
                 }
 
-                if(resultadoNOME.Count() == 0 && resultadoCPF.Count() == 0)
+                if (resultadoNOME.Count() == 0 && resultadoCPF.Count() == 0)
                 {
                     ViewData["Resultado"] = "Nenhuma responsta foi encontrada.";
                 }
@@ -133,6 +137,7 @@ namespace Teste_Tria_Software.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             return View(cliente);
         }
 
