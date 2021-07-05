@@ -1,2 +1,2 @@
 # Teste_Tria_Software
-Teste Avaliativo - Vaga
+Teste Avaliativo -  Vaga .NET Pleno.
