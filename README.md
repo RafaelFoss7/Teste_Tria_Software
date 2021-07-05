@@ -1,2 +1,2 @@
 # Teste_Tria_Software
-Teste Avaliativo -  Vaga .NET Pleno.
+Teste Avaliativo (CRUD) -  Vaga .NET Core Pleno.
